@@ -6,11 +6,13 @@ import { GlobalStyles } from "./globalStyles";
 
 // data
 import { SliderData } from "./data/SliderData";
+import { InfoData } from "./data/InfoData";
 
 // components
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Dropdown from "./components/Dropdown";
+import InfoSection from "./components/InfoSection";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false)
@@ -26,6 +28,7 @@ function App() {
         <Navbar toggle={toggle} />
         <Dropdown isOpen={isOpen} toggle={toggle} />
         <Hero slides={SliderData} />
+        <InfoSection {...InfoData} />
       </Router>
     </>
   );
