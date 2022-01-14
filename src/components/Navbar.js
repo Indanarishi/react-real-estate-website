@@ -14,7 +14,6 @@ const Nav = styled.nav`
     padding: 1rem 2rem;
     z-index: 100;
     position: fixed;
-    background: red;
 `
 
 const NavLink = css`
